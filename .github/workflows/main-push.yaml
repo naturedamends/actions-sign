@@ -31,7 +31,7 @@ jobs:
       - name: Run Jest tests
         run: npm run prod:test
 
-      - run: mkdir -p coverage/site/badges/
+      - run: ls -la; ls -la coverage || true; mkdir -p coverage/site/badges/
 
       - name: Create Coverage Badges
         uses: jaywcjlove/coverage-badges-cli@main

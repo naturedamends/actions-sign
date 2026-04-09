@@ -1,9 +1,10 @@
 {
   "name": "natrued-amends-action-sign",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "",
   "license": "ISC",
   "author": "",
+  "repository": "https://github.com/naturedamends/actions-sign",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {

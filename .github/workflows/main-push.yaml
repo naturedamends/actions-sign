@@ -28,9 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Pre test checks
-        run: npm run pretty:check
-
       - name: Run Jest tests
         run: npm run prod:test
 

@@ -31,10 +31,15 @@ jobs:
       - name: Run Jest tests
         run: npm run prod:test
 
-      - name: Generate badges
-        run: |
-          mkdir -p coverage/site/badges/
-          npx coverage-badges --output coverage/site/badges/badges.svg
+      - run: mkdir -p coverage/site/badges/
+
+      - name: Create Coverage Badges
+        uses: jaywcjlove/coverage-badges-cli@main
+        with:
+          style: flat
+          source: coverage/coverage-summary.json
+          output: coverage/site/badges/badges.svg
+          jsonPath: totals.percent_covered
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v4

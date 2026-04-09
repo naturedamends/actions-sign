@@ -34,7 +34,7 @@ jobs:
       - run: ls -la; ls -la coverage || true; mkdir -p coverage/site/badges/
 
       - name: Create Coverage Badges
-        uses: jaywcjlove/coverage-badges-cli@main
+        uses: jaywcjlove/coverage-badges-cli@998665f7962b1a3935ba8c3e786171a99436e5d1
         with:
           style: flat
           source: coverage/coverage-final.json
